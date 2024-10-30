@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>MyBeasiswa</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #770e12; font-weight: 700;">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase py-4 py-lg-0">
+            <li class="nav-item" style="font-size: 20px;">
+              <a class="nav-link text-white" aria-current="page" href="index.html">Dashboard</a>
+            </li>
+            <li class="nav-item" style="font-size: 20px;">
+              <a class="nav-link text-white" href="form.php">Daftar</a>
+            </li>
+            <li class="nav-item" style="font-size: 20px;">
+              <a class="nav-link text-white" href="getdata.php">Hasil</a>
+            </li>
+            <li class="nav-item" style="font-size: 20px;">
+              <a class="nav-link text-white" href="grafik.php">Chart</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <style>
+      /* Mengubah warna teks saat hover dan saat aktif */
+      body, .navbar-nav .nav-link {
+      font-family: 'Montserrat', sans-serif;
+      }
+      .navbar-nav .nav-link:hover,
+      .navbar-nav .nav-link.active {
+        background-color: #fb2f2f8a !important; /* Warna merah terang */
+        color: #ffffff !important; /* Warna teks putih */
+        border-radius: 5px; /* Menambahkan sedikit radius untuk membuatnya lebih menarik */
+      }
+    </style>
+
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Beasiswa Telkom University Purwokerto</h2>
+          <h3 class="section-subheading text-muted">"Raih Impian dan Cita-citamu Sekarang"</h3>
+          <a class="btn btn-primary btn-xl text-uppercase custom-btn" href="form.php">
+            Daftar Beasiswa
+          </a>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+        
+        <style>
+          /* Ubah warna tombol menjadi merah */
+          .custom-btn {
+            background-color: #770e12;
+            border-color: #770e12;
+            color: #ffffff; /* Warna teks putih */
+          }
+        
+          /* Ubah warna tombol saat di-hover */
+          .custom-btn:hover {
+            background-color: #BF1F21; /* Merah lebih terang saat hover */
+            border-color: #BF1F21;
+            color: #ffffff; /* Tetap putih untuk teks */
+          }
+        </style>
+
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 1-->
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                <!-- <div class="portfolio-hover"></div> -->
+                <img class="img-fluid" style="height: 270px; width: 420px" src="assets/img/JPA1.jpg" alt="..." />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Beasiswa Jalur Rapor 1 (JPA1)</div>
+                <p class="justify">
+                  Telkom University membuka pendaftaran pada Seleksi Mahasiswa Baru (SMB) Tahun Akademik 2025/2026 dengan membuka Jalur Prestasi Akademik (JPA) 1. 
+                  Jalur JPA 1 adalah jalur seleksi yang dibuka untuk Program Diploma (D3), Sarjana (S1), dan Sarjana Terapan (S1 Terapan) dengan hanya menggunakan Nilai Rapor. 
+                  Jalur seleksi JPA 1 ini dapat diikuti seluruh siswa/i SMA/ SMK/ MA untuk mendaftar di Telkom University baik Kampus Bandung, Kampus Jakarta, Kampus Surabaya, maupun Kampus Purwokerto.
+                  Tersedia Beasiswa Pintar* bagi pendaftar dengan nilai rapor terbaik.
+                </p>
+
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 2-->
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                <!-- <div class="portfolio-hover"></div> -->
+                <img class="img-fluid" style="height: 270px; width: 420px" src="assets/img/kominfo.jpg" alt="..." />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Beasiswa KOMINFO</div>
+                <p class="justify">
+                  Beasiswa KOMINFO adalah Program Beasiswa Pascasarjana Bidang Informatika dikelola oleh Kementerian Komunikasi dan Informatika yang bekerja sama dengan Telkom University. 
+                  Jalur ini terbuka untuk PNS/TNI/Polri dan masyarakat umum dengan latar belakang pekerjaan di sektor Teknologi Informasi dan Komunikasi hingga pelaku rintisan lokal. 
+                  Beasiswa KOMINFO tersedia hanya untuk program studi Master of Cybersecurity & Digital Forensics (MSF).
+                </p>
+
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 3-->
+            <div class="portfolio-item">
+              <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                <!-- <div class="portfolio-hover"> -->
+                <!-- <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div> -->
+                <!-- </div> -->
+                <img class="img-fluid" style="height: 270px; width: 4200px" src="assets/img/mbr.jpg" alt="..." />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Beasiswa Master by Research</div>
+                <p class="justify">
+                  Program Beasiswa Magister Berbasis Riset (Master By Research) merupakan Beasiswa Unggulan* dimana program ini menitikberatkan pada research skills, dengan penelitian mencakup 2/3 dari kurikulum total.
+                  Beasiswa MBR bertujuan menghasilkan lulusan yang memiliki kemampuan yang diperoleh melalui pengalaman meneliti secara mandiri dan menghasilkan publikasi jurnal. 
+                  Mahasiswa yang mengikuti program ini pada akhir perkuliahan akan menghasilkan final research project atau tesis dan diwajibkan menulis dan mempublikasikan hasil risetnya pada minimal 2 paper.
+                </p>
+
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Modals-->
+    <!-- Portfolio item 1 modal popup-->
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </body>
+</html>
